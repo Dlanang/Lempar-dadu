@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Game Lempar Dadu</title>
+<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+
+<div id="welcomeContainer">
+  <h1>Selamat Datang di Game Lempar Dadu!</h1>
+  <img src="https://cdn.pixabay.com/photo/2016/12/18/16/29/casino-1910347_960_720.png" alt="Dice Game Welcome Image">
+  <form id="playerForm">
+    <label for="playerName">Masukkan Nama Pemain:</label>
+    <input type="text" id="playerName" required>
+    <button type="submit">Mulai Permainan</button>
+  </form>
+</div>
+
+<div id="gameContainer" style="display: none;">
+  <h1>Game Lempar Dadu</h1>
+
+  <p id="welcomeMessage"></p> <!-- Added welcome message element -->
+
+  <div id="diceContainer">
+    <img id="diceImg" src="https://images.pexels.com/photos/2468563/pexels-photo-2468563.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Dice">
+  </div>
+
+  <div id="resultContainer">
+    <p id="resultText">Hasil: </p>
+  </div>
+
+  <button id="rollButton">Lempar Dadu</button>
+
+  <audio id="diceSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"></audio>
+</div>
+
+<script src="src/script.js"></script>
+
+</body>
+</html>
